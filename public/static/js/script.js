@@ -16,15 +16,6 @@ $(document).ready(function() {
     //});  
     $(document).bind('reveal.facebox', function() {     	 
         $('#new_user').submit(function() {  
-        //	alert("aaaaaaaaaaaaaa");
-        //	  $.ajax({
-		 //     type : 'GET',
-      	//	  url : '/sessions/new/',
-    	//	  dataType : 'script'
-		 //  });
-   		//return false;
-
-        	
             $.post(this.action, $(this).serialize(), null, "script");  
             return false;  
         });  
